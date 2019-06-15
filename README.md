@@ -1,6 +1,6 @@
-# myapp
+# AnimaDicerApp
 
-This is my testing flutter app.
+Flutter app to adapt AnimaDicer.
 
 ## Getting Started
 
