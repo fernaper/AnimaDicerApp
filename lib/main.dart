@@ -1,17 +1,27 @@
 import 'package:flutter/material.dart';
-import 'panelSelector.dart';
+import './pages/characterPage.dart';
+import 'package:AnimaDicerApp/consts.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyAppState();
+  }
+}
 
-  static const String _title = 'AnimaDicer';
+class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: _title,
-      home: PanelSelector(),
+      title: title,
+      theme: ThemeData(primarySwatch: Colors.red),
+      home: Scaffold(
+          appBar: AppBar(title: Text(title)),
+          body: Characters(),
+      )
     );
   }
 }
